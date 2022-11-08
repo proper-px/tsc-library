@@ -104,4 +104,7 @@ dist
 .tern-port
 
 # generated js files
-/lib
+lib/
+
+# parcel cache
+.parcel-cache/
