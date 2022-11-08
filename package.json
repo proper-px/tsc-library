@@ -14,7 +14,8 @@
     "postversion": "git push && git push --tags",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "plop": "plop"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
     "@types/react": "^18.0.25",
     "babel-loader": "^8.3.0",
     "parcel": "^2.7.0",
+    "plop": "^3.1.1",
     "prettier": "^2.7.1",
     "sass": "^1.56.0",
     "tslint": "^6.1.3",
