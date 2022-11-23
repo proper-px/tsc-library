@@ -1,0 +1,16 @@
+.form-control {
+  padding: $sp-md $sp-lg;
+  border: 2px solid $dark;
+  border-radius: $rounded;
+  &:focus {
+    outline: 2px solid rgba($dark, 0.5);
+  }
+  &--light {
+    background-color: $dark;
+    color: $light;
+    border: 2px solid $light;
+    &:focus {
+      outline: 2px solid rgba($light, 0.5);
+    }
+  }
+}

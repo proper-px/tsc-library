@@ -6,7 +6,15 @@
     accent-color: $dark;
   }
   #{$this}__label {
-    accent-color: $dark;
+    color: $dark;
     margin-left: $sp;
+  }
+  &--light {
+    #{$this}__input {
+      accent-color: $light;
+    }
+    #{$this}__label {
+      color: $light;
+    }
   }
 }

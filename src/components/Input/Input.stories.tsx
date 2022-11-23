@@ -9,6 +9,7 @@ export default {
   component: Input,
   args: {
     value: '',
+    isLight: false,
   },
 } as ComponentMeta<typeof Input>;
 
@@ -47,15 +48,4 @@ Date.args = {
   name: 'Date',
   id: 'Date',
   type: 'date',
-};
-
-export const Range = Template.bind({});
-
-Range.args = {
-  name: 'Range',
-  id: 'Range',
-  type: 'range',
-  min: 0,
-  max: 200,
-  value: 20,
 };

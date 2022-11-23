@@ -1,6 +1,14 @@
+import classNames from 'classnames';
 import React from 'react';
-export interface IInputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+import { IIsLight } from '../../shared/IsLight';
 
-export const Input = ({ ...props }: IInputProps) => {
-  return <input {...props} />;
+export interface IInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'style'>, IIsLight {}
+
+export const Input = ({ isLight = false, className, ...props }: IInputProps) => {
+  const inputClass = classNames({
+    'form-control': true,
+    [`form-control--light`]: isLight,
+    [className as string]: className,
+  });
+  return <input {...props} className={inputClass} />;
 };
