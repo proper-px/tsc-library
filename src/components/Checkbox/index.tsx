@@ -11,7 +11,7 @@ export const Checkbox = ({ label, isLight = false, className, ...props }: ICheck
   const checkboxClass = classNames({
     'form-check': true,
     'form-check--light': isLight,
-    [className as string]: className,
+    className: className!,
   });
   return (
     <div className={checkboxClass}>

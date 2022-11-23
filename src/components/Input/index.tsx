@@ -8,7 +8,7 @@ export const Input = ({ isLight = false, className, ...props }: IInputProps) => 
   const inputClass = classNames({
     'form-control': true,
     [`form-control--light`]: isLight,
-    [className as string]: className,
+    className: className!,
   });
   return <input {...props} className={inputClass} />;
 };

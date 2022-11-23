@@ -24,6 +24,7 @@ Text.args = {
   name: 'text',
   id: 'text',
   type: 'text',
+  placeholder: 'John Doe',
 };
 
 export const Number = Template.bind({});

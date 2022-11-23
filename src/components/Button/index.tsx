@@ -10,7 +10,7 @@ export const Button = ({ children, type = 'button', priority = 'primary', classN
   const buttonClass = classNames({
     btn: true,
     [`btn-${priority}`]: priority,
-    [className as string]: className,
+    className: className!,
   });
   return (
     <button type={type} {...props} className={buttonClass}>

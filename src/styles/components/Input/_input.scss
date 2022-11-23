@@ -12,5 +12,8 @@
     &:focus {
       outline: 2px solid rgba($light, 0.5);
     }
+    &::placeholder {
+      color: rgba($light, 0.75);
+    }
   }
 }
