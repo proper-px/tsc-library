@@ -1,0 +1,12 @@
+.form-check {
+  $this: &;
+  display: flex;
+  align-items: center;
+  #{$this}__input {
+    accent-color: $dark;
+  }
+  #{$this}__label {
+    accent-color: $dark;
+    margin-left: $sp;
+  }
+}

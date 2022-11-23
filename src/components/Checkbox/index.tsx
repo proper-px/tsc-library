@@ -7,9 +7,11 @@ export interface ICheckboxProps extends Omit<IInputProps, 'type'> {
 
 export const Checkbox = ({ label, ...props }: ICheckboxProps) => {
   return (
-    <>
-      <input type="checkbox" {...props} />
-      <label htmlFor={props.id}>{label}</label>
-    </>
+    <div className="form-check">
+      <input type="checkbox" {...props} className="form-check__input" />
+      <label htmlFor={props.id} className="form-check__label">
+        {label}
+      </label>
+    </div>
   );
 };

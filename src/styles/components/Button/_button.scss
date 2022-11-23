@@ -1,3 +1,40 @@
+$button-variants: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'light': $light,
+  'dark': $dark,
+);
+
 .btn {
-  background-color: $primary;
+  padding: $sp-lg $sp-xl;
+  border-radius: $rounded-md;
+  border: 2px solid;
+  font-weight: 600;
+  line-height: 1.125;
+  &:hover:not(:disabled) {
+    cursor: pointer;
+  }
+  &:disabled {
+    background-color: darken($white, 5%);
+    color: lighten($dark, 5%);
+    border-color: darken($white, 5%);
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+
+@each $variant, $value in $button-variants {
+  .btn-#{$variant} {
+    border-color: darken($value, 5%);
+    background-color: #{$value};
+    @include get-color-yiq($value);
+    transition: all 0.3s ease;
+    outline: 4px solid transparent;
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      background-color: darken($value, 2.5%);
+      outline: 4px solid rgba($value, 0.25);
+    }
+  }
 }
