@@ -2,7 +2,18 @@
   "name": "properpx-library",
   "version": "0.0.2",
   "description": "",
-  "source": "src/index.tsx",
+  "targets": {
+    "css": {
+      "source": "src/styles/main.scss"
+    },
+    "main": {
+      "source": "src/index.tsx"
+    },
+    "types": {
+      "source": "src/index.tsx"
+    }
+  },
+  "css": "lib/main.css",
   "main": "lib/main.js",
   "types": "lib/types.d.ts",
   "files": [
@@ -11,6 +22,7 @@
   "scripts": {
     "build": "parcel build",
     "watch": "parcel watch",
+    "start": "concurrently \"npm:watch\" \"npm:storybook\"",
     "prepare": "npm run build",
     "version": "git add -A",
     "postversion": "git push && git push --tags",
@@ -32,7 +44,7 @@
   "homepage": "https://github.com/proper-px/tsc-library#readme",
   "devDependencies": {
     "@babel/core": "^7.20.2",
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/react": "^2.1.5",
     "@parcel/packager-ts": "^2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "@parcel/transformer-typescript-types": "^2.7.0",
@@ -46,6 +58,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.25",
     "babel-loader": "^8.3.0",
+    "concurrently": "^7.6.0",
     "parcel": "^2.7.0",
     "plop": "^3.1.1",
     "prettier": "^2.7.1",
