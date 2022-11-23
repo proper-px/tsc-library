@@ -1,5 +1,5 @@
 {
-  "name": "@alexander312/tsc-library",
+  "name": "tsc-library",
   "version": "0.0.1",
   "description": "",
   "source": "src/index.tsx",
