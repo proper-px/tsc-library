@@ -5,6 +5,9 @@
   "source": "src/index.tsx",
   "main": "lib/main.js",
   "types": "lib/types.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "parcel build",
     "watch": "parcel watch",
