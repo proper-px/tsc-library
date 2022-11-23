@@ -1,5 +1,5 @@
 {
-  "name": "tsc-library",
+  "name": "@alexander312/tsc-library",
   "version": "0.0.1",
   "description": "",
   "source": "src/index.tsx",
@@ -23,7 +23,7 @@
   },
   "keywords": [],
   "author": "Alexander Edwards",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/proper-px/tsc-library/issues"
   },
