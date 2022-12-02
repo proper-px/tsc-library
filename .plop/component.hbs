@@ -1,9 +1,9 @@
 import React from 'react';
 
-export interface I{{name}}Props {
+export interface I{{pascalCase name}}Props extends ITestId  {
   prop: string;
 }
 
-export const {{name}} = ({ prop }: I{{name}}Props) => {
-  return <div>{prop}</div>;
+export const {{pascalCase name}} = ({ prop, testID }: I{{pascalCase name}}Props) => {
+  return <div data-testID={testID}>{prop}</div>;
 };

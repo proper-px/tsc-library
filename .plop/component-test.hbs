@@ -1,0 +1,13 @@
+import React from 'react';
+import { fireEvent, render } from '@testing-library/react';
+import { {{pascalCase name}} } from '.';
+
+const defaultProps = {
+  prop: 'Hello',
+  testID: 'testingID'
+};
+
+it('renders with inner text', () => {
+  const { queryByText } = render(<{{pascalCase name}} {...defaultProps} />);
+  expect(queryByText('Hello')).toBeTruthy();
+});
