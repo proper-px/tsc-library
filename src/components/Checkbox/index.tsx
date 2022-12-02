@@ -7,6 +7,24 @@ export interface ICheckboxProps extends Omit<IInputProps, 'type' | 'style'>, IIs
   label: string;
 }
 
+/**
+ *
+ * `!IMPORTANT!` `type` and `style` have been disabled
+ *
+ * Example:
+ * ```TSX
+ * const [termValue, setTermValue] = useState('0');
+ *
+ * const handleTermChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+ *  setTermValue((prevValue) => {
+ *    return prevValue !== '0' ? '0' : '1'
+ *  });
+ * }
+ *
+ * <Checkbox label="I agree to the Terms & Conditions" value={termValue} onChange={handleTermChange} checked={termValue === '1'}/>
+ * ```
+ */
+
 export const Checkbox = ({ label, isLight = false, className, ...props }: ICheckboxProps) => {
   const checkboxClass = classNames({
     'form-check': true,
