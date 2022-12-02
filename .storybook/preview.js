@@ -1,5 +1,5 @@
 import '../lib/main.css';
-import { Title, Description, Stories, Primary, PRIMARY_STORY, ArgsTable } from '@storybook/addon-docs';
+import { Title, Stories, Primary, PRIMARY_STORY, ArgsTable } from '@storybook/addon-docs';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
