@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { useArgs } from '@storybook/client-api';
+import { Title, Stories, Primary, PRIMARY_STORY, ArgsTable } from '@storybook/addon-docs';
 
 import { Input } from '.';
 

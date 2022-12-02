@@ -1,4 +1,5 @@
 import '../lib/main.css';
+import { Title, Description, Stories, Primary, PRIMARY_STORY, ArgsTable } from '@storybook/addon-docs';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -7,5 +8,15 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+  },
+  docs: {
+    page: () => (
+      <>
+        <Title />
+        <Primary />
+        <ArgsTable story={PRIMARY_STORY} />
+        <Stories />
+      </>
+    ),
   },
 };

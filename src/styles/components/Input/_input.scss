@@ -2,6 +2,7 @@
   padding: $sp-md $sp-lg;
   border: 2px solid $dark;
   border-radius: $rounded;
+  width: 100%;
   &:focus {
     outline: 2px solid rgba($dark, 0.5);
   }

@@ -11,13 +11,18 @@ export default {
 
 const Template: ComponentStory<typeof Textarea> = (args) => {
   const [{ value }, updateArgs] = useArgs();
-  return <Textarea value={value} onChange={(e) => updateArgs({ value: e.target.value })}></Textarea>;
+  return <Textarea {...args} value={value} onChange={(e) => updateArgs({ value: e.target.value })}></Textarea>;
 };
 
 export const Default = Template.bind({});
+
+/**
+ * This is a description
+ */
 
 Default.args = {
   value: '2',
   name: 'default',
   id: 'default',
+  isLight: false,
 };
