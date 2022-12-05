@@ -22,8 +22,13 @@ export default function (plop) {
       },
       {
         type: 'add',
-        path: 'src/styles/components/{{pascalCase name}}/_{{camelCase name}}.tsx',
+        path: 'src/styles/components/{{pascalCase name}}/_{{camelCase name}}.scss',
         templateFile: '.plop/component-style.hbs',
+      },
+      {
+        type: 'add',
+        path: 'src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+        templateFile: '.plop/component-story.hbs',
       },
       {
         type: 'modify',

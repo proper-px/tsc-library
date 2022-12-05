@@ -1,0 +1,21 @@
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import { {{pascalCase name}} } from '.';
+
+export default {
+  title: 'Core/{{pascalCase name}}',
+  component: {{pascalCase name}},
+  args: {
+    prop: 'Some value',
+  },
+  argTypes: { onClick: { action: 'clicked' } },
+} as ComponentMeta<typeof {{pascalCase name}}>;
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => <{{pascalCase name}} {...args} />;
+
+export const Example = Template.bind({});
+
+Example.args = {
+  prop: 'Example',
+};
