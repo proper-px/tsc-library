@@ -3,8 +3,8 @@ import { fireEvent, render } from '@testing-library/react';
 import { Card } from '.';
 
 const defaultProps = {
-  prop: 'Hello',
-  testID: 'testingID'
+  children: 'Hello',
+  testID: 'testingID',
 };
 
 it('renders with inner text', () => {
