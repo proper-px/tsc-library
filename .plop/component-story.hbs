@@ -9,7 +9,10 @@ export default {
   args: {
     prop: 'Some value',
   },
-  argTypes: { onClick: { action: 'clicked' } },
+  // Remove the layout if you want it to be `padded`
+  parameters: {
+    layout: 'fullscreen',
+  },
 } as ComponentMeta<typeof {{pascalCase name}}>;
 
 const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => <{{pascalCase name}} {...args} />;
