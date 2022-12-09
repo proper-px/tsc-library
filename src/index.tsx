@@ -13,6 +13,7 @@ export {
   CardImageTop,
   CardSubTitle,
   CardTitle,
+  PromoCard,
 } from './components';
 
 export const add = (a: number, b: number): number => {
